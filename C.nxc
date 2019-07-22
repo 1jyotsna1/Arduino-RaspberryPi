@@ -1,0 +1,20 @@
+ void FlashMessage(const string A)
+ {
+ repeat(5)
+ {
+  TextOut(13,33,A);
+  Wait(500);
+  TextOut(15,33,"          ");
+  Wait(500);
+}
+}
+
+task main()
+{
+ RectOut(0,0,99,63);
+ RectOut(2,2,95,59);
+ 
+ FlashMessage(" Bonjour!");
+ FlashMessage(" A bientot!");
+ }
+
