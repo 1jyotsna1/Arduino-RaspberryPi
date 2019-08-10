@@ -24,6 +24,15 @@ Reboot
 
 This is an example Python program, no wrapper for the AX12 exists? The values are hardcoded to move Dynamixel 1, Execute an action (5), send 3 bytes of data, MOVE command(1E) and 2 positions(32 03) followed by the CRC (A3). I needed a small sleep(0.1), the port.write takes more time and the output was already LOW.
 
+# The values are hardcoded to move Dynamixel #1:
+# - "FF FF": packet header
+# - "01": dynamixel ID to move
+# - "05": "execute an action"
+# - "03": number of bytes of data
+# - "1E": "move" command
+# - "32 03" or "CD 00": position to reach
+# - "A3" or "0B": checksum
+
 import serial
 import time
 import RPi.GPIO as GPIO
