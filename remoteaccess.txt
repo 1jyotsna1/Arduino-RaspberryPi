@@ -1,0 +1,12 @@
+sudo apt-get install tightvncserver
+
+iwconfig
+
+ifconfig
+
+vncserver :1
+
+
+## on remote access desktop
+
+192.168.1.26:1
