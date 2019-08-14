@@ -1,0 +1,36 @@
+sudo apt-get update
+sudo apt-get install apache2 -y
+sudo apt-get install php libapache2-mod-php -y
+
+ifconfig
+cd /var/www/html
+sudo chmod +x /var/www/html
+sudo chmod 777 /var/www
+sudo leafpad gpio.php
+
+
+
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width" />
+ <title>LED Control</title>
+ </head>
+         <body>
+         LED Control:
+         <form method="get" action="gpio.php">
+                 <input type="submit" value="ON" name="on">
+                 <input type="submit" value="OFF" name="off">
+         </form>
+         <?php
+         $setmode17 = shell_exec(" gpio -g mode 17 out");
+         if(isset($_GET['on'])){
+                 $gpio_on = shell_exec(" gpio -g write 17 1");
+                 echo "LED is on";
+         }
+         else if(isset($_GET['off'])){
+                 $gpio_off = shell_exec(" gpio -g write 17 0");
+                 echo "LED is off";
+         }
+         ?>
+         </body>
+ </html>
