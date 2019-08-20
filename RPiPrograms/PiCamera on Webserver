@@ -1,0 +1,23 @@
+Reference https://www.teachmemicro.com/raspberry-pi-web-cam/
+//on terminal
+git clone https://github.com/jacksonliam/mjpg-streamer.git
+sudo apt-get install cmake libjpeg8-dev
+cd /home/pi/mjpg-streamer/mjpg-streamer-experimental
+make
+sudo make install
+sudo nano stream.sh
+
+#!/bin/sh
+
+PORT="8080"
+ID="Raspberry Pi Web Cam"
+PW="1234"
+SIZE="320x240"
+FRAMERATE="10"
+
+export LD_LIBRARY_PATH=/usr/local/lib
+mjpg_streamer -i "input_uvc.so -f $FRAMERATE -r $SIZE -d /dev/video1 -y" -o "output_http.so -w /var/www/html -p $PORT"
+
+sudo chmod +x stream.sh
+
+
