@@ -3,3 +3,6 @@ https://stackoverflow.com/questions/50375225/installing-opencv-on-python-3-5-3-o
 https://stackoverflow.com/questions/48965309/h5py-import-error-on-libhdf5-serial-so-100
 
 https://www.youtube.com/watch?v=IZC9G3U58Sc
+
+import serial.tools.list_ports
+print(list(serial.tools.list_ports.comports()))
