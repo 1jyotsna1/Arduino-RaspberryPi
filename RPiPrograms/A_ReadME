@@ -1,0 +1,17 @@
+Dear reader
+
+ImportantLibLinks: Will contain all important library and command prompt links!
+
+PHP App: Contains a .php script to remote access control an LED blinking program across the server
+PiCamera on Webserver: A program to remote access a camera vision onto the webserver
+
+
+Sensor.py: Interfacing of an IR sensor to an RPi
+Sumo.py: Interfacing motor and IR sensor
+humiditysensor__matplotlib, matplotlibshow.py: Interfacing a DHT 11 Humidity sensor  (and "name1.png" contains output screenshot of the same)
+motor.py: Interfacing motor
+motorcontrolrpi.txt: Interfacing motor with a specific duty cycle
+py_serial.py: Serial UART communication of a string within the RPi (Shorting Rx and Tx)
+ultrasonicSensor.py: Interfacing Ultrasonic sensor
+
+The rest are all Image processing and speech recognition related codes!
