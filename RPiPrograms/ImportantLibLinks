@@ -5,6 +5,11 @@ Install Raspbian OS onto the SD card and initial steps to run on RPi: https://it
 Command liners:
 sudo apt-get update
 sudo apt-get upgrade
+gpio readall
+gpio -g     (Causes the pins to be read as BCM pins)
+gpio -1     (Causes the pins to be read as General physical pins)
+gpio write <pin> 0/1
+gpio read <pin>
 
 
 
@@ -15,10 +20,7 @@ sudo apt-get upgrade
 
 
 https://stackoverflow.com/questions/50375225/installing-opencv-on-python-3-5-3-on-raspbian-os
-
 https://stackoverflow.com/questions/48965309/h5py-import-error-on-libhdf5-serial-so-100
-
 https://www.youtube.com/watch?v=IZC9G3U58Sc
-
 import serial.tools.list_ports
 print(list(serial.tools.list_ports.comports()))
