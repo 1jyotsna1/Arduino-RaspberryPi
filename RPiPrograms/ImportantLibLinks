@@ -1,3 +1,19 @@
+Getting started with RPi, pinout and communication standards: https://pinout.xyz/#
+
+Install Raspbian OS onto the SD card and initial steps to run on RPi: https://itsfoss.com/tutorial-how-to-install-raspberry-pi-os-raspbian-wheezy/
+
+Command liners:
+sudo apt-get update
+sudo apt-get upgrade
+
+
+
+
+
+
+
+
+
 https://stackoverflow.com/questions/50375225/installing-opencv-on-python-3-5-3-on-raspbian-os
 
 https://stackoverflow.com/questions/48965309/h5py-import-error-on-libhdf5-serial-so-100
