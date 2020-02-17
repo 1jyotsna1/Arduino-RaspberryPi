@@ -2,6 +2,9 @@ Getting started with RPi, pinout and communication standards: https://pinout.xyz
 
 Install Raspbian OS onto the SD card and initial steps to run on RPi: https://itsfoss.com/tutorial-how-to-install-raspberry-pi-os-raspbian-wheezy/
 
+How to assign Statis IP address to RPi: (via wlan0): https://www.youtube.com/watch?v=LCJtUbRlIXE
+                                        (via ethernet): https://www.youtube.com/watch?v=D1eD60_jhKI
+                                        
 Command liners:
 sudo apt-get update
 sudo apt-get upgrade
