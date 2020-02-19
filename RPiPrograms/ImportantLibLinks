@@ -20,6 +20,7 @@ gpio read <pin>
 What is "raspi config": https://www.raspberrypi.org/documentation/configuration/raspi-config.md
 
 How to autorun the raspberry pi: https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/
+                                https://www.raspberrypi-spy.co.uk/2015/02/how-to-autorun-a-python-script-on-raspberry-pi-boot/
 How to autorun (alternative): https://www.youtube.com/watch?v=DkqzLHopaeE
 
 https://stackoverflow.com/questions/50375225/installing-opencv-on-python-3-5-3-on-raspbian-os
